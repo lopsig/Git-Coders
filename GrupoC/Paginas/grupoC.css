@@ -69,3 +69,34 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+.tabla-datos {
+    margin-top: 5rem;            /* Separa la tabla bastante hacia abajo respecto a las tarjetas */
+}
+
+table {
+    width: 100%;                 /* Obliga a la tabla a expandirse a todo el ancho de su contenedor */
+    border-collapse: collapse;   /* Une los bordes de las celdas para que no se vean dobles líneas */
+    background: #16213e;         /* Mismo fondo azul marino que las tarjetas */
+    border-radius: 15px;         /* Bordes redondeados en las esquinas de la tabla */
+    overflow: hidden;            /* Obliga a las celdas de las esquinas a respetar el redondeado anterior */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra pesada alrededor de toda la tabla */
+    font-size: 0.85rem;          /* Letra un poco más pequeña para que quepan bien los textos largos */
+}
+
+th, td {
+    padding: 0.75rem 0.5rem;     /* Espacio interior de las celdas (arriba/abajo y lados) */
+    text-align: left;            /* Alinea el texto de los datos hacia la izquierda */
+    border-bottom: 1px solid #1a1a2e; /* Línea divisoria muy oscura entre cada fila */
+    vertical-align: top;         /* Si un texto es muy largo, el de al lado se alinea arriba del todo */
+}
+
+th {
+    background: #e94560;         /* Fondo rojo neón para la fila de títulos de la tabla */
+    color: #fff;                 /* Texto blanco para los títulos */
+    font-weight: bold;           /* Letra en negrita */
+    text-transform: uppercase;   /* Títulos en MAYÚSCULAS */
+    letter-spacing: 1px;         /* Pequeño espacio estilizado entre letras */
+    font-size: 0.75rem;          /* Títulos un poco más pequeños para resaltar el contenido */
+    white-space: nowrap;         /* Evita que los títulos se rompan en dos líneas */
+}
